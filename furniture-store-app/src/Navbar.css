@@ -1,0 +1,140 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Navbar stays fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure navbar stays on top */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.dot {
+  color: #5c7f67; /* Greenish */
+}
+
+/* Navigation Links Section */
+.header-right {
+  display: flex; /* Makes links align horizontally */
+  gap: 2rem; /* Adds spacing between links */
+  align-items: center;
+  list-style: none; /* Removes default bullet points */
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* Prevents wrapping of links */
+}
+
+.header-right a {
+  text-decoration: none;
+  color: #5c7f67;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.header-right a:hover {
+  background-color: #5c7f67;
+  color: #fff;
+}
+
+/* Login Link Styling (Ensures Consistency) */
+.header-right a.signup__links {
+  text-decoration: none;
+  color: #5c7f67;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.header-right a.signup__links:hover {
+  background-color: #5c7f67;
+  color: #fff;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 0.9rem;
+}
+
+.search-bar button {
+  background-color: #5c7f67;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #4b634f; /* Darker green on hover */
+}
+
+/* Cart Icon */
+.nav-icons span {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #5c7f67;
+}
+
+.nav-icons span:hover {
+  color: #4b634f;
+}
+
+/* Results Section */
+.results {
+  margin-top: 100px; /* Ensures content appears below the navbar */
+  padding: 1rem 2rem;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .header-right {
+    margin-top: 1rem;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    gap: 1rem;
+  }
+}

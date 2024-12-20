@@ -1,0 +1,18 @@
+/* App.css */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}

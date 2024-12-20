@@ -1,0 +1,40 @@
+.hero-section {
+    width: 100%;
+    height: 100vh; /* Makes it full screen height */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensures text stands out */
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  
+  .work-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50; /* A green button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .work-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
